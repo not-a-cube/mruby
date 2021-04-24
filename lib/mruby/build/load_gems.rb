@@ -55,7 +55,7 @@ module MRuby
         end
       elsif params[:mgem]
         mgem_list_dir = "#{gem_clone_dir}/mgem-list"
-        mgem_list_url = 'https://github.com/mruby/mgem-list.git'
+        mgem_list_url = 'https://github.com/notacube/mgem-list.git'
         if File.exist? mgem_list_dir
           git.run_pull mgem_list_dir, mgem_list_url if $pull_gems
         else
